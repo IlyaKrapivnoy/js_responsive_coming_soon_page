@@ -92,3 +92,23 @@ html, body {
         padding: 10px;
     }
 }
+
+@media(max-height: 600px) {
+    .logo {
+        max-width: 200px;
+    }
+
+    p {
+        display: none;
+    }
+}
+
+@media(max-height: 400px) {
+    .logo {
+        padding-bottom: 30px;
+    }
+
+    h1 {
+        display: none;
+    }
+}
