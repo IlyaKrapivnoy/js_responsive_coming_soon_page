@@ -23,6 +23,14 @@ const intvl = setInterval(() => {
     <div>${hours} <span>Hours</div>
     <div>${mins} <span>Minutes</div>
     <div>${seconds} <span>Seconds</div>
-    
     `;
+
+    // if launch date passed
+    if(distance < 0) {
+        // Stop countdown
+        clearInterval(intvl);
+        // Style and output text
+        countdown.getElementsByClassName.color = '#17a2b8';
+        countdown.innerHTML = 'Launched!';
+    }
 }, 1000);
